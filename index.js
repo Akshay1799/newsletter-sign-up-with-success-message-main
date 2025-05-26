@@ -31,7 +31,8 @@ form.addEventListener('submit', (e) => {
     emailError.style.display = "none";
 
     confirmationMessage.innerHTML = `A confirmation email has been sent to <strong> ${emailValue}</strong>. Please check your mail and click the button inside to confirm your subscription.`;
-
+    emailInput.value = "";
+    
     container.style.display = 'none';
     thanksCard.style.display = 'flex';
 })
